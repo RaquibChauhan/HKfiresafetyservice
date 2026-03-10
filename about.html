@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | HK Fire Safety Service</title>
+    <meta name="description" content="Learn about HK Fire Safety Service, our mission, and our gallery.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* About Company Section */
+
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+            font-family: var(--font-heading);
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            flex: 1;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+
+
+        .stat-box {
+            background: var(--bg-surface-glass);
+            border: 1px solid var(--border-glass);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            font-family: var(--font-heading);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+
+
+        /* Reviews Section */
+        .reviews-section {
+            padding: 6rem 0;
+            background: var(--bg-dark);
+        }
+
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .review-card {
+            background: var(--bg-surface-glass);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 2.5rem;
+            position: relative;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .review-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(255, 60, 0, 0.15);
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 3rem;
+            color: var(--primary);
+            opacity: 0.1;
+        }
+
+        .review-stars {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .review-text {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .reviewer-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .reviewer-details h4 {
+            margin: 0;
+            font-size: 1rem;
+            color: var(--text-main);
+        }
+
+        .reviewer-details p {
+            margin: 0;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="loader-logo-wrap">
+                <div class="loader-logo-glow"></div>
+                <img src="assets/logo.jpg" alt="HK Fire Logo" class="loader-logo" />
+                <div class="loader-pulse-ring"></div>
+                <div class="loader-pulse-ring ring-2"></div>
+            </div>
+            <div class="loader-text">
+                <span class="loader-brand">HK</span>
+                <span class="loader-brand-accent">FIRE</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-transparent">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpg" alt="HK Fire Logo" class="nav-logo-img" />
+                <span class="logo-text">HK <span class="fire-accent">FIRE</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="hover-underline">Home</a></li>
+                <li><a href="services.html" class="hover-underline">Services</a></li>
+                <li><a href="about.html" class="hover-underline">About Us</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline nav-cta">
+                <i class="fa-solid fa-phone-volume heartbeat"></i> Contact Us
+            </a>
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="btn btn-primary mt-4">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container reveal-up">
+            <h1 class="hero-title"><span class="gradient-text">About HK Fire</span></h1>
+            <p class="hero-subtitle" style="margin: 0 auto; max-width: 600px;">
+                Decades of expertise engineering survival and peace of mind through uncompromising safety standards.
+            </p>
+        </div>
+        <div class="hero-bg-anim"></div>
+        <div id="particles-js"></div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container about-section">
+        <div class="about-content reveal-left">
+            <h2>Our Mission & Vision</h2>
+            <p>At HK Fire Safety Service, we believe that preparation is the ultimate defense. Founded by industry
+                veterans, our mission is to eliminate fire hazards before they turn into tragedies by delivering
+                state-of-the-art protection systems for businesses and industries.</p>
+            <p>We pride ourselves on an uncompromising commitment to quality. Whether it is rigorous safety audits,
+                massive industrial installations, or 24/7 emergency support, we do not cut corners. Because when it
+                comes to fire safety, every second and every detail matters.</p>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years Exp.</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Projects Done</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Team</div>
+                </div>
+            </div>
+        </div>
+        <div class="about-image reveal-right">
+            <img src="assets/pump_install_1772685142118.png" alt="Our Facility Installation">
+        </div>
+    </section>
+
+
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="reviews-header reveal-up">
+                <h2>What Our <span class="gradient-text">Clients Say</span></h2>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card reveal-up" style="--delay: 100ms">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"HK Fire completely overhauled our warehouse's fire protection layout. Their
+                        attention to detail and professional ethics are unmatched. I finally sleep well knowing our
+                        inventory is safe."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">S</div>
+                        <div class="reviewer-details">
+                            <h4>Supriya Patel</h4>
+                            <p>Operations Manager, LogiCorp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card reveal-up" style="--delay: 200ms">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="review-text">"When it comes to compliance and audits, these guys are the absolute best.
+                        They made sure our new office building met all legal fire safety norms perfectly before our
+                        launch."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">R</div>
+                        <div class="reviewer-details">
+                            <h4>Ravi Sharma</h4>
+                            <p>Director, Metro Builders</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card reveal-up" style="--delay: 300ms">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"The kitchen fire suppression system they installed handles everything
+                        automatically. As a restaurant owner, taking away the worry of a grease fire is worth every
+                        penny."</p>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">M</div>
+                        <div class="reviewer-details">
+                            <h4>Michael D'Costa</h4>
+                            <p>Head Chef, The Grand Cafe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.jpg" alt="HK Fire Safety Service Logo" class="footer-logo-img" />
+                    <span class="logo-text">HK <span class="fire-accent">FIRE</span></span>
+                </a>
+                <p class="footer-desc">Your ultimate partner in advanced fire prevention, detection, and suppression
+                    strategy. We don't just sell equipment; we engineer survival.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Reach Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Veraval, Gujarat</p>
+                <p><a href="mailto:info@hkfiresafetyservice.com" class="text-muted"><i class="fa-solid fa-envelope"></i>
+                        info@hkfiresafetyservice.com</a></p>
+                <p><a href="tel:+919924294762" class="text-muted"><i class="fa-solid fa-phone"></i> +91 99242 94762</a>
+                </p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 HK Fire Safety Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Particles JS for embers -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

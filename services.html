@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | HK Fire Safety Service</title>
+    <meta name="description" content="Explore our comprehensive fire safety services at HK Fire.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .service-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .service-row:hover .service-image {
+            transform: scale(1.06);
+        }
+
+        .service-row:hover .service-num {
+            opacity: 0.7;
+        }
+
+        .service-features li i {
+            color: var(--primary);
+            font-size: 1rem;
+            background: rgba(255, 60, 0, 0.1);
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="loader-logo-wrap">
+                <div class="loader-logo-glow"></div>
+                <img src="assets/logo.jpg" alt="HK Fire Logo" class="loader-logo" />
+                <div class="loader-pulse-ring"></div>
+                <div class="loader-pulse-ring ring-2"></div>
+            </div>
+            <div class="loader-text">
+                <span class="loader-brand">HK</span>
+                <span class="loader-brand-accent">FIRE</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-transparent">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpg" alt="HK Fire Logo" class="nav-logo-img" />
+                <span class="logo-text">HK <span class="fire-accent">FIRE</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="hover-underline">Home</a></li>
+                <li><a href="services.html" class="hover-underline">Services</a></li>
+                <li><a href="about.html" class="hover-underline">About Us</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline nav-cta">
+                <i class="fa-solid fa-phone-volume heartbeat"></i> Contact Us
+            </a>
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="btn btn-primary mt-4">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container reveal-up">
+            <h1 class="hero-title"><span class="gradient-text">Our Services</span></h1>
+            <p class="hero-subtitle" style="margin: 0 auto; max-width: 600px;">
+                State-of-the-art fire safety services, audits, and equipment maintenance designed to protect what
+                matters most.
+            </p>
+        </div>
+        <div class="hero-bg-anim"></div>
+        <div id="particles-js"></div>
+    </header>
+
+    <!-- Services Grid List -->
+    <section class="container services-list">
+
+        <!-- 1. Fire Protection System -->
+        <div class="service-row reveal-up">
+            <div class="service-image-container reveal-left">
+                <img src="assets/fire_protection_1772684839457.png" alt="Fire Protection System" class="service-image">
+            </div>
+            <div class="service-content reveal-right">
+                <span class="service-num">01</span>
+                <h2>Fire Protection System</h2>
+                <p>We design, implement, and maintain cutting-edge industrial fire protection systems. Our networks
+                    ensure rapid detection and suppression tailored to highly specialized facilities.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> Custom Design</li>
+                    <li><i class="fa-solid fa-check"></i> Industrial Grade</li>
+                    <li><i class="fa-solid fa-check"></i> Turnkey Installation</li>
+                    <li><i class="fa-solid fa-check"></i> Automated Detection</li>
+                </ul>
+                <a href="https://wa.me/919924294762?text=I%20would%20like%20to%20get%20a%20quote%20for%20the%20Fire%20Protection%20System."
+                    target="_blank" class="btn btn-primary btn-glow">Get a Quote <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- 2. Fire Alarm System -->
+        <div class="service-row reveal-up">
+            <div class="service-image-container reveal-right">
+                <img src="assets/fire_alarm_1772684853206.png" alt="Fire Alarm System" class="service-image">
+            </div>
+            <div class="service-content reveal-left">
+                <span class="service-num">02</span>
+                <h2>Fire Alarm System</h2>
+                <p>Advanced fire alarm control panels integrated with smart sensing technologies to instantly detect
+                    smoke and heat. Ensure maximum safety for commercial buildings.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> Smart Sensors</li>
+                    <li><i class="fa-solid fa-check"></i> Fast Response Time</li>
+                    <li><i class="fa-solid fa-check"></i> 24/7 Monitoring</li>
+                    <li><i class="fa-solid fa-check"></i> Control Panels</li>
+                </ul>
+                <a href="https://wa.me/919924294762?text=I%20would%20like%20to%20get%20a%20quote%20for%20the%20Fire%20Alarm%20System."
+                    target="_blank" class="btn btn-primary btn-glow">Get a Quote <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- 3. Sprinkler Protection System -->
+        <div class="service-row reveal-up">
+            <div class="service-image-container reveal-left">
+                <img src="assets/sprinkler_1772685090712.png" alt="Sprinkler Protection System" class="service-image">
+            </div>
+            <div class="service-content reveal-right">
+                <span class="service-num">03</span>
+                <h2>Sprinkler Protection System</h2>
+                <p>High-reliability fire sprinkler systems expertly installed into ceilings and safety grids. Our modern
+                    sprinkler heads deliver rapid, localized water deployment to suppress fires immediately.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> Ceiling Mounted</li>
+                    <li><i class="fa-solid fa-check"></i> Premium Hardware</li>
+                    <li><i class="fa-solid fa-check"></i> High Coverage Area</li>
+                    <li><i class="fa-solid fa-check"></i> Regular Checks</li>
+                </ul>
+                <a href="https://wa.me/919924294762?text=I%20would%20like%20to%20get%20a%20quote%20for%20the%20Sprinkler%20Protection%20System."
+                    target="_blank" class="btn btn-primary btn-glow">Get a Quote <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- 4. Fire Extinguisher Refelling -->
+        <div class="service-row reveal-up">
+            <div class="service-image-container reveal-right">
+                <img src="assets/ext_refill_1772685114415.png" alt="Fire Extinguisher Refelling" class="service-image">
+            </div>
+            <div class="service-content reveal-left">
+                <span class="service-num">04</span>
+                <h2>Fire Extinguisher Refelling</h2>
+                <p>Certified, precise, and highly detailed refilling services for all types of industrial fire
+                    extinguishers. Guaranteed safe storage, professional tools, and reliable safety checks.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> CO2 & Powder</li>
+                    <li><i class="fa-solid fa-check"></i> Routine Testing</li>
+                    <li><i class="fa-solid fa-check"></i> Fast Turnaround</li>
+                    <li><i class="fa-solid fa-check"></i> Visual Inspections</li>
+                </ul>
+                <a href="https://wa.me/919924294762?text=I%20would%20like%20to%20get%20a%20quote%20for%20Fire%20Extinguisher%20Refelling."
+                    target="_blank" class="btn btn-primary btn-glow">Get a Quote <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- 5. All pump installation service -->
+        <div class="service-row reveal-up">
+            <div class="service-image-container reveal-left">
+                <img src="assets/pump_install_1772685142118.png" alt="All pump installation service"
+                    class="service-image">
+            </div>
+            <div class="service-content reveal-right">
+                <span class="service-num">05</span>
+                <h2>All Pump Installation Service</h2>
+                <p>From massive industrial fire water pumps to high-powered diesel engines, we build and install
+                    commercial-grade mechanical rooms capable of supplying massive pressure seamlessly.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> High Pressure</li>
+                    <li><i class="fa-solid fa-check"></i> Diesel Engines</li>
+                    <li><i class="fa-solid fa-check"></i> Control Panels</li>
+                    <li><i class="fa-solid fa-check"></i> Flow Maintenance</li>
+                </ul>
+                <a href="https://wa.me/919924294762?text=I%20would%20like%20to%20get%20a%20quote%20for%20the%20All%20Pump%20Installation%20Service."
+                    target="_blank" class="btn btn-primary btn-glow">Get a Quote <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- 6. Kitchen Fire Suppression System -->
+        <div class="service-row reveal-up">
+            <div class="service-image-container reveal-right">
+                <img src="assets/kitchen_fire_system_v2.jpg" alt="Kitchen Fire Suppression System"
+                    class="service-image">
+            </div>
+            <div class="service-content reveal-left">
+                <span class="service-num">06</span>
+                <h2>Kitchen Fire Suppression System</h2>
+                <p>Protect commercial restaurants, cloud kitchens, and huge catering setups with specialized clean
+                    suppression systems targeting grease and deep fryers precisely and safely.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-check"></i> Chemical Suppression</li>
+                    <li><i class="fa-solid fa-check"></i> Fast Clean-up</li>
+                    <li><i class="fa-solid fa-check"></i> Range Hood Integration</li>
+                    <li><i class="fa-solid fa-check"></i> Heat Sensors</li>
+                </ul>
+                <a href="https://wa.me/919924294762?text=I%20would%20like%20to%20get%20a%20quote%20for%20the%20Kitchen%20Fire%20Suppression%20System."
+                    target="_blank" class="btn btn-primary btn-glow">Get a Quote <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.jpg" alt="HK Fire Safety Service Logo" class="footer-logo-img" />
+                    <span class="logo-text">HK <span class="fire-accent">FIRE</span></span>
+                </a>
+                <p class="footer-desc">Your ultimate partner in advanced fire prevention, detection, and suppression
+                    strategy. We don't just sell equipment; we engineer survival.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Reach Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Veraval, Gujarat</p>
+                <p><a href="mailto:info@hkfiresafetyservice.com" class="text-muted"><i class="fa-solid fa-envelope"></i>
+                        info@hkfiresafetyservice.com</a></p>
+                <p><a href="tel:+919924294762" class="text-muted"><i class="fa-solid fa-phone"></i> +91 99242 94762</a>
+                </p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 HK Fire Safety Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Particles JS for embers -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

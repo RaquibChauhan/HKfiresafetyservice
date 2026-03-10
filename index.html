@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK Fire | premium Fire Safety Solutions</title>
+    <meta name="description" content="State-of-the-art fire safety services, audits, and equipment maintenance.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="loader-logo-wrap">
+                <div class="loader-logo-glow"></div>
+                <img src="assets/logo.jpg" alt="HK Fire Logo" class="loader-logo" />
+                <div class="loader-pulse-ring"></div>
+                <div class="loader-pulse-ring ring-2"></div>
+            </div>
+            <div class="loader-text">
+                <span class="loader-brand">HK</span>
+                <span class="loader-brand-accent">FIRE</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-transparent">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpg" alt="HK Fire Logo" class="nav-logo-img" />
+                <span class="logo-text">HK <span class="fire-accent">FIRE</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="hover-underline">Home</a></li>
+                <li><a href="services.html" class="hover-underline">Services</a></li>
+                <li><a href="about.html" class="hover-underline">About Us</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline nav-cta">
+                <i class="fa-solid fa-phone-volume heartbeat"></i> Contact Us
+            </a>
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="btn btn-primary mt-4">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-anim"></div>
+        <div class="hero-overlay"></div>
+        <!-- Ember particles container -->
+        <div id="particles-js"></div>
+
+        <div class="container hero-content">
+            <div class="hero-text-box reveal-up">
+                <div class="badge glow-badge"><i class="fa-solid fa-check-circle"></i> ISO 9001 Certified</div>
+                <h1 class="hero-title">Protecting Lives & <span class="gradient-text">Assets From Fire.</span></h1>
+                <p class="hero-subtitle">Comprehensive fire safety audits, state-of-the-art equipment installation, and
+                    rapid-response maintenance strategies for industrial and commercial sectors.</p>
+                <div class="hero-actions">
+                    <a href="services.html" class="btn btn-primary btn-glow">Explore Services <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    <a href="contact.html" class="btn btn-secondary glass-btn">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal-right">
+                <div class="extinguisher-showcase" id="extShowcase">
+                    <!-- Glow ring behind -->
+                    <div class="ext-glow-ring"></div>
+                    <div class="ext-body" id="extBody">
+                        <!-- Head / Valve Assembly -->
+                        <div class="ext-head">
+                            <div class="ext-valve"></div>
+                            <div class="ext-lever"></div>
+                            <div class="ext-pin"></div>
+                            <div class="ext-gauge">
+                                <div class="gauge-needle"></div>
+                            </div>
+                        </div>
+                        <!-- Hose -->
+                        <div class="ext-hose">
+                            <div class="ext-nozzle"></div>
+                        </div>
+                        <!-- Main Cylinder -->
+                        <div class="ext-cylinder">
+                            <div class="ext-highlight"></div>
+                            <div class="ext-band ext-band-top"></div>
+
+                            <div class="ext-band ext-band-bot"></div>
+                        </div>
+                        <!-- Base -->
+                        <div class="ext-base"></div>
+                        <!-- Shadow -->
+                        <div class="ext-shadow"></div>
+                        <!-- Spray FX (hidden, shown on click) -->
+                        <div class="spray-fx" id="sprayFx">
+                            <div class="spray-flash"></div>
+                            <div class="spray-cone"></div>
+                            <div class="spray-cone spray-cone-2"></div>
+                            <div class="spray-mist m1"></div>
+                            <div class="spray-mist m2"></div>
+                            <div class="spray-mist m3"></div>
+                            <div class="spray-mist m4"></div>
+                            <div class="spray-mist m5"></div>
+                            <div class="spray-mist m6"></div>
+                            <div class="spray-mist m7"></div>
+                            <div class="spray-mist m8"></div>
+                            <div class="spray-mist m9"></div>
+                            <div class="spray-mist m10"></div>
+                            <div class="spray-droplet d1"></div>
+                            <div class="spray-droplet d2"></div>
+                            <div class="spray-droplet d3"></div>
+                            <div class="spray-droplet d4"></div>
+                            <div class="spray-droplet d5"></div>
+                            <div class="spray-droplet d6"></div>
+                        </div>
+                    </div>
+                    <p class="ext-hint"><i class="fa-solid fa-hand-pointer"></i> Click to spray</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Emergency Banner -->
+    <section id="emergency" class="emergency-banner reveal-up">
+        <div class="container banner-inner">
+            <div class="banner-text">
+                <h2>Require Immediate Fire Safety Assistance?</h2>
+                <p>Our rapid response team is on standby 24 hours a day, 7 days a week.</p>
+            </div>
+            <div class="banner-action">
+                <a href="tel:+919924294762" class="btn btn-alert pulse-strong">
+                    <i class="fa-solid fa-phone"></i> +91 99242 94762
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Our Expertise</span>
+                <h2 class="section-title">Comprehensive <span class="gradient-text">Fire Solutions</span></h2>
+                <p class="section-desc">Why HK Fire Safety Service is the perfect choice for your fire safety needs.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-panel reveal-up" style="--delay: 100ms">
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-clipboard-check card-icon"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Regular Safety Audits</h3>
+                    <p>Rigorous inspections to identify vulnerabilities, ensure legal compliance, and design custom
+                        safety blueprints.</p>
+                    <a href="services.html" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass-panel reveal-up" style="--delay: 200ms">
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-fire-extinguisher card-icon"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Equipment Supply</h3>
+                    <p>Premium grade extinguishers, alarms, sprinklers, and suppression systems tailored to your
+                        facility's specific risks.</p>
+                    <a href="services.html" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass-panel reveal-up" style="--delay: 300ms">
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-screwdriver-wrench card-icon"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>System Maintenance</h3>
+                    <p>Scheduled testing, refilling, and certification of all fire management assets to guarantee
+                        performance during emergencies.</p>
+                    <a href="services.html" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card glass-panel reveal-up" style="--delay: 400ms">
+                    <div class="card-icon-wrapper">
+                        <i class="fa-solid fa-users-viewfinder card-icon"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <h3>Staff Training</h3>
+                    <p>Hands-on drill simulations and emergency protocol training to empower your workforce to respond
+                        effectively.</p>
+                    <a href="services.html" class="learn-more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.jpg" alt="HK Fire Safety Service Logo" class="footer-logo-img" />
+                    <span class="logo-text">HK <span class="fire-accent">FIRE</span></span>
+                </a>
+                <p class="footer-desc">Your ultimate partner in advanced fire prevention, detection, and suppression
+                    strategy. We don't just sell equipment; we engineer survival.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Reach Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Veraval, Gujarat</p>
+                <p><a href="mailto:info@hkfiresafetyservice.com" class="text-muted"><i class="fa-solid fa-envelope"></i>
+                        info@hkfiresafetyservice.com</a></p>
+                <p><a href="tel:+919924294762" class="text-muted"><i class="fa-solid fa-phone"></i> +91 99242 94762</a>
+                </p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 HK Fire Safety Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Particles JS for embers -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

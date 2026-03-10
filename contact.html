@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | HK Fire</title>
+    <meta name="description" content="Get in touch with HK Fire for all your fire safety and emergency response needs.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <div class="loader-logo-wrap">
+                <div class="loader-logo-glow"></div>
+                <img src="assets/logo.jpg" alt="HK Fire Logo" class="loader-logo" />
+                <div class="loader-pulse-ring"></div>
+                <div class="loader-pulse-ring ring-2"></div>
+            </div>
+            <div class="loader-text">
+                <span class="loader-brand">HK</span>
+                <span class="loader-brand-accent">FIRE</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-transparent">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.jpg" alt="HK Fire Logo" class="nav-logo-img" />
+                <span class="logo-text">HK <span class="fire-accent">FIRE</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="hover-underline">Home</a></li>
+                <li><a href="services.html" class="hover-underline">Services</a></li>
+                <li><a href="about.html" class="hover-underline">About Us</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline nav-cta">
+                <i class="fa-solid fa-phone-volume heartbeat"></i> Contact Us
+            </a>
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" class="btn btn-primary mt-4">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact Hero -->
+    <header class="contact-hero">
+        <div id="particles-js" style="position: absolute; inset: 0; z-index: -1;"></div>
+        <div class="container hero-content">
+            <div class="badge glow-badge"><i class="fa-solid fa-headset"></i> We're Here For You</div>
+            <h1 class="hero-title reveal-up">Get in <span class="gradient-text">Touch</span></h1>
+            <p class="hero-subtitle reveal-up" style="--delay: 100ms; max-width: 600px; margin: 0 auto;">
+                Have an emergency or a query? Reach out to our 24/7 support via call, mail, or direct WhatsApp message.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contact Methods Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Call Method -->
+                <a href="tel:+919924294762" class="contact-method glass-panel reveal-up" style="--delay: 100ms">
+                    <i class="fa-solid fa-phone-volume heartbeat"></i>
+                    <h3>Call Us</h3>
+                    <p class="text-muted">+91 99242 94762</p>
+                </a>
+
+                <!-- Mail Method -->
+                <a href="mailto:info@hkfiresafetyservice.com" class="contact-method glass-panel reveal-up"
+                    style="--delay: 200ms">
+                    <i class="fa-solid fa-envelope heartbeat"></i>
+                    <h3>Email Us</h3>
+                    <p class="text-muted">info@hkfiresafetyservice.com</p>
+                </a>
+
+                <!-- WhatsApp Method -->
+                <a href="https://wa.me/919924294762" target="_blank" class="contact-method glass-panel reveal-up"
+                    style="--delay: 300ms">
+                    <i class="fa-brands fa-whatsapp heartbeat"></i>
+                    <h3>WhatsApp</h3>
+                    <p class="text-muted">Message us 24/7</p>
+                </a>
+            </div>
+
+            <!-- WhatsApp Direct Form -->
+            <div class="wa-form-wrapper glass-panel reveal-up" style="--delay: 400ms">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2>Drop a <span class="gradient-text">Message</span></h2>
+                    <p class="text-muted">Send us a direct WhatsApp message from right here.</p>
+                </div>
+                <form id="waForm" onsubmit="sendToWhatsapp(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactInfo">Email or Phone</label>
+                        <input type="text" id="contactInfo" class="form-control"
+                            placeholder="john@example.com or +91 900..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" placeholder="How can we help you?"
+                            required></textarea>
+                    </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn btn-primary pulse-strong"
+                            style="width: 100%; border-radius: 10px; padding: 1rem;">
+                            <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Send to WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Google Maps Section -->
+            <div class="map-section reveal-up" style="--delay: 500ms">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3415.8865002767257!2d70.37000843005767!3d20.917764926010275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bfd33bcffcfcde9%3A0xca6dec2e5647b400!2sSaurashtra%20Pest%20Control!5e0!3m2!1sen!2sin!4v1773115072544!5m2!1sen!2sin"
+                    width="100%" height="100%"
+                    style="border:0; filter: invert(90%) hue-rotate(180deg) contrast(110%); border-radius: 20px;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-glow"></div>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.jpg" alt="HK Fire Safety Service Logo" class="footer-logo-img" />
+                    <span class="logo-text">HK <span class="fire-accent">FIRE</span></span>
+                </a>
+                <p class="footer-desc">Your ultimate partner in advanced fire prevention, detection, and suppression
+                    strategy. We don't just sell equipment; we engineer survival.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Reach Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Veraval, Gujarat</p>
+                <p><a href="mailto:info@hkfiresafetyservice.com" class="text-muted"><i class="fa-solid fa-envelope"></i>
+                        info@hkfiresafetyservice.com</a></p>
+                <p><a href="tel:+919924294762" class="text-muted"><i class="fa-solid fa-phone"></i> +91 99242 94762</a>
+                </p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 HK Fire Safety Service. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Particles JS for embers -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function sendToWhatsapp(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const contactInfo = document.getElementById('contactInfo').value;
+            const message = document.getElementById('message').value;
+
+            // Base WhatsApp Number
+            const waNumber = '919924294762';
+
+            // Format the message
+            const text = `Hello HK Fire,\nMy name is ${name}.\nContact: ${contactInfo}\n\nMessage:\n${message}`;
+
+            // Encode URI components and handle line breaks for WhatsApp
+            const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
+
+            // Open in new tab
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+
+</html>
